@@ -4,4 +4,7 @@ class WelcomeController < ApplicationController
 
   def help
   end
+  
+  def books
+  end
 end
