@@ -15,7 +15,7 @@ README.md
     ```
     Next, migrate the database:
     ```
-    $ rails db:migrate
+    $ rails db:migrateg
     ```
     Finally, run the test suite to verify that everything is working correctly:
     ```
