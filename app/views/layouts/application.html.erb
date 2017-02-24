@@ -1,12 +1,19 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
     <html>
       <head>
-<title><%= yield(:title) %> | CMPE131_TEAM_HYPER</title> 
-<%= csrf_meta_tags %>
-<%= stylesheet_link_tag 'application', media: 'all',
+<title><%= yield(:title) %>| cmpe131_team_hyper</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag 'application', media: 'all',
                                                   'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
-<body>
-<%= yield %> </body>
-</html>
+        
+      <%= render 'layouts/shim' %>
+      </head>
+      <body>
+        <%= render 'layouts/navigation' %>
+      <div class="container">
+        <%= yield %>
+         <%= render 'layouts/footer' %>
+        </div>
+      </body>
+    </html>
