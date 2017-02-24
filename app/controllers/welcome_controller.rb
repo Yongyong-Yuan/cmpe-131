@@ -7,4 +7,8 @@ class WelcomeController < ApplicationController
   
   def books
   end
+  
+  def contact
+  end
+  
 end
