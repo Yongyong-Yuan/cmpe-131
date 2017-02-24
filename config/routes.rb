@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  get '/signup', to:"users#new"
+
   #get 'welcome/home' #it can be deleted, but have to use root_path
 
   
